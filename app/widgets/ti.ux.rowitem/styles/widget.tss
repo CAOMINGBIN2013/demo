@@ -1,0 +1,76 @@
+"TableView":{
+	backgroundColor:'#eee'
+},
+
+"TableViewRow":{
+	backgroundColor:'#eee',
+	height:Ti.UI.SIZE,
+	font:{
+		fontFamily:Alloy.CFG.fontNormal,
+		fontSize:16
+	}
+},
+".tableviewrow-rowitem":{
+	height: "50",
+	backgroundColor: "#fff"
+},
+".fa-row-haschild":{
+	right: "10",
+	icon: "fa-angle-right"
+},
+".fa-row-icon":{
+	left:10,
+	size:24,
+	iconColor:'#333'
+},
+".label-paragraph":{
+	left:5,
+	right:5,
+	font:{
+		fontFamily:Alloy.CFG.fontNormal
+	}
+},
+".label-row-title":{
+	left:35	
+},
+".label-row-subtitle":{
+	textAlign:"right",
+	right:"35",
+	color:"#666"
+},
+".label-row-count":{
+	backgroundColor: "#bbb",
+	color: "#fff",
+	textAlign: "center",
+	borderRadius: "8",
+	height: "20",
+	visible: "false",
+	right: "35"
+},
+".view-row-separator":{
+	height:0.5,
+	backgroundColor:'#eee',
+	bottom:0
+},
+
+".view-height-fit":{
+	 height:Ti.UI.SIZE
+},
+
+".view-height-width-fit":{
+	 height:Ti.UI.SIZE,
+	 width:Ti.UI.SIZE
+},
+".view-width-height-fit":{
+	 height:Ti.UI.SIZE,
+	 width:Ti.UI.SIZE
+},
+ "#childrenImage":{
+	height:28, width:15,
+ },
+"#line":{
+  bottom:0,
+  height:'2dp',
+  backgroundColor:'#6000'
+}
+

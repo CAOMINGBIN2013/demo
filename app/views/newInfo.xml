@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="评论"></Require>
+			<ScrollView class="t-0 b-0" backgroundColor="#F4F6F8">
+				<View class="lo-v h-size bg-white">
+					<Label class="t-10 itemTitle" id="lblTitle">新闻标题新闻标题</Label>
+					<View class="l-10 lo-c t-10 h-size">
+						<Label id="lblSource" class="itemDate l-10">新闻： 人民网</Label>
+						<Label id="lblDate" class="itemDate r-10"></Label>
+					</View>
+					<View class="line"></View>
+					<Label id="lblContent" module="xp.ui" class="itemLine l-10 r-10"></Label>
+				</View>
+				
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

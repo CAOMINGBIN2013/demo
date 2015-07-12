@@ -1,0 +1,29 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="检测机构">
+			</Require>
+			<ScrollView class="t-0 b-0" backgroundColor="#F4F6F8">
+				<View class="lo-c h-size bg-white">
+					<ImageView image="/images/gs_logo.jpg" id="image" class="h-80 w-80 l-10 t-10">
+					</ImageView>
+					<View class="lo-v l-100 r-10 h-size t-10" >
+						<Label class="itemTitle primaryLable" id="lblAgentName">
+						</Label>
+						<Label class="itemLine" id="lblAgentDescription">
+						</Label>
+					</View>
+					<View class="t-120 line l-10 r-10">
+					</View>
+				</View>
+				<View class="t-10 h-size bg-white" >
+					<TableView id="resultTb" class="t-5 h-280">
+						<Widget src="ti.ux.rowitem" icon="fa-file-text-o" title="检测能力表(业务范围)" hasChildren="true"/>
+						<Widget src="ti.ux.rowitem" icon="fa-book" title="资质证书" hasChildren="true" >
+						</Widget>
+					</TableView>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

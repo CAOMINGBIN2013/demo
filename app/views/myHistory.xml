@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量报告书">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="我的浏览记录"></Require>
+			<Require type="view" src="historyView"></Require>
+		</View>
+	</Window>
+</Alloy>

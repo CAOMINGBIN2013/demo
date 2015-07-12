@@ -1,0 +1,13 @@
+{
+  "id": "me.wslong.tiTabs",
+  "name": "me.wslong.tiTabs",
+  "description": "Was me.wslong.tiTabGroupCrossPlatform, an iOS-like Cross-Platform Tab Group for Titanium",
+  "author": "Shallong",
+  "version": "2.0",
+  "copyright": "Copyright 2015 Shallong",
+  "license": "Apache Licence 2.0",
+  "min-alloy-version": "1.1",
+  "min-titanium-version": "3.0",
+  "tags": "Tab, TabGoup, Cross-Platform",
+  "platforms": "android,ios,mobileweb"
+}

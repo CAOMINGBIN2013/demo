@@ -1,0 +1,30 @@
+<Alloy>
+	<Window title="产品质量报告书" id="mainWindow">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="检测中介服务"></Require>
+		<!--
+			<View class="h-size">
+						<View class="t-10 w-80% h-size">
+							<Label >检测中介服务介绍 检测中介服务介绍 检测中介服务介绍检测中介服务介绍检测中介服务介绍检测中介服务介绍检测中介服务介绍检测中介服务介绍</Label>
+						</View>
+					</View>-->
+		
+			<View class="h-size t-20">
+				<View class="lo-h w-100% h-size" id="cService">
+					<Label class="service" service="建筑材料"></Label>
+					<Label class="service" service="其他类"></Label>
+					<Label class="service" service="汽车类" >皮革箱包类</Label>
+					<Label class="service"  service="家具">建筑材料类</Label>
+					<Label class="service"  service="电子电器">日化类</Label>
+					<Label class="service"  service="皮革箱包">纺织类</Label>
+					<Label class="service"  service="鞋类">电子类</Label>
+					<Label class="service"  service="化妆品">玩具类</Label>
+					<Label class="service"  service="玩具及儿童用品">家具类</Label>
+					<Label class="service"  service="保健食品">汽车类</Label>
+					<Label class="service"  service="食品类">鞋类</Label>
+					<Label class="service"  service="纺织品及服装">其它类</Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

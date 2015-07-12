@@ -1,0 +1,1 @@
+ti build -p android -t device --shadow --sdk 3.5.1.GA

@@ -1,0 +1,28 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0 bg"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="预约"></Require>
+			<ScrollableView id="cAppoint" class="lo-c h-size w-80%"  scrollingEnabled="false" showPagingControl="fase">
+				<View  class="t-30 h-size" >
+					<TextField id="appointPhone" hintText="填写预约手机号码" class="t-30 w-100%"></TextField>
+						
+					<View class="t-1 lo-h w-100% h-size bg-white">
+						<TextField id="appointZone" hintText="详细地址" class="w-90%"></TextField>
+						<Label id="changeCode" class="primaryLable ">》</Label>
+					</View>
+					<Button id="btnAppoint" class="btn w-100%">预约</Button>
+				</View>
+				<View  class="t-30 h-size" >
+					<View class="t-30 lo-h h-120 bg-white">
+						<ImageView class="t-30 l-10" image="/images/report_ico3.png"></ImageView>
+						<View class="t-30 l-10 h-size w-size lo-v">
+							<Label  class="l-0 primaryLable">预约成功</Label>
+							<Label  class="l-0">我们的工作人员会尽快与您联系。</Label>
+						</View>
+					</View>
+					<Button id="btnBack" class="btn w-100%">返回</Button>
+				</View>
+			</ScrollableView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,12 @@
+<Alloy>
+	<Window title="产品质量报告书" id="mainWindow">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="曝光栏"></Require>
+			<Widget id="paging" src="de.manumaticx.pagingcontrol" />
+			<ScrollableView id="scrollableView">
+				<TableView id="tbProduct" title="质量曝光栏"/>
+				<TableView id="tbNew" title="实验室曝光栏"/>
+			</ScrollableView>
+		</View>
+	</Window>
+</Alloy>

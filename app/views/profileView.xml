@@ -1,0 +1,40 @@
+<Alloy>
+	<ScrollView class="t-0 h-fill">
+		<View class="lo-c h-size">
+			<ImageView id="image" image="/images/user_logo.png" class="h-80 w-80 l-10 t-10"></ImageView>
+			<View class="lo-v l-100 r-10 h-size t-10" >
+				<Label class="itemTitle" id="lblName"></Label>
+				<Label class="itemLine" id="lblLine1"></Label>
+				<Label class="itemLine" id="lblLine2">退出登录</Label>
+			</View>
+			<View class="t-100 line l-10 r-10"></View>
+		</View>
+		<TableView id="resultTb" class="t-5 h-size">
+			<Widget src="ti.ux.rowitem" icon="fa-calendar" title="我的浏览记录" hasChildren="true" id="myHistoryBtn" ></Widget>
+			<Widget src="ti.ux.rowitem" icon="fa-star" title="我的收藏" hasChildren="true" id="myFavorite" ></Widget>
+			<Widget src="ti.ux.rowitem" icon="fa-wechat" title="意见反馈" hasChildren="true" id="myAdvice" ></Widget>
+		</TableView>
+		<View id="companyCategoires" class="h-size t-10">
+			<View class="h-size lo-c">
+				<Label class="l-10 t-5">我的商品类型</Label>
+				<Label id="editCategoies" class="r-10 t-5">编辑/添加</Label>
+			</View>
+			<View id="categories" class="t-10 w-100% h-size lo-c">
+				<View class="w-size h-size lo-h">
+					<Label class="category" >食品类</Label>
+					<Label class="category" >化工类</Label>
+					<Label class="category" >五金类</Label>
+				</View>
+			</View>
+		</View>
+		<View class="t-10 line l-10 r-10"></View>
+		<View id="companySuggestion" class="h-size">
+			<View class="h-size lo-h">
+				<Label class="l-10">以下是为你挑选的检测机构</Label>
+				<Label class="l-5">（通过我们的平台将有8折优惠）</Label>
+			</View>
+			<View class="t-10 line l-10 r-10"></View>
+			<TableView id="tbAgent" class="t-5 h-size" />
+		</View>
+	</ScrollView>
+</Alloy>

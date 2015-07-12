@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewRow class="lo-v">
+		<View class="t-10 lo-v l-10 r-10 h-size">
+			<Label class="itemTitle" id="lblTitle"></Label>
+			<Label class="itemDate" id="lblDate"></Label>
+		</View>
+		<View class="t-10 line l-10 r-10"></View>
+	</TableViewRow>
+</Alloy>

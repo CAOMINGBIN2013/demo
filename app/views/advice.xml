@@ -1,0 +1,10 @@
+<Alloy>
+	<Window title="产品质量报告书" id="mainWindow">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="意见反馈"></Require>
+			<TextArea class="l-10 w-95% h-40% category">
+				
+			</TextArea>
+		</View>
+	</Window>
+</Alloy>

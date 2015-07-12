@@ -1,0 +1,10 @@
+".service": {
+	borderRadius: "4dp",
+	top:12,
+	bottom:10,
+	left: 25,
+	width: 80,
+	height: 80,
+	color:"#fff",
+	textAlign:"center"
+}

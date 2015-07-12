@@ -1,0 +1,6 @@
+"#paging" : {
+    top: 0,
+    indicatorColor: "#e87726",
+    tabs: true,
+    tabWidth:'33%'
+}

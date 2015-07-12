@@ -1,0 +1,6 @@
+<Alloy>
+  <View id="searchBox">
+  	 <ImageView id="searchButton" onClick="doSearch"/>
+     <TextField id="q" onReturn="doSearch" class="w-120"></TextField>
+  </View>
+</Alloy>

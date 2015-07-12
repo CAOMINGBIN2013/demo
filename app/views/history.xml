@@ -1,0 +1,6 @@
+<Alloy>
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="浏览记录"></Require>
+			<Require id="historyView" type="view" src="historyView"></Require>
+		</View>
+</Alloy>

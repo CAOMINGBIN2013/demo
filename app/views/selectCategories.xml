@@ -1,0 +1,23 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="选择产品类型"></Require>
+			<View class="h-size t-5 lo-c">
+				<Label class="l-10">产品类型</Label>
+				<Button id="btnSelect" class="r-10 btn">确定</Button>
+			</View>
+			<View class="line"></View>
+			<ScrollView class="t-10 b-0 l-10 r-10 lo-h">
+				<Label class="w-31% category">五金类</Label>
+				<Label class="w-31% l-3% category" >食品类</Label>
+				<Label class="w-31% l-3% category">化工类</Label>
+				<Label class="w-31% category">五金类</Label>
+				<Label class="w-31% l-3% category">食品类</Label>
+				<Label class="w-31% l-3% category">化工类</Label>
+				<Label class="w-31% category">五金类</Label>
+				<Label class="w-31% l-3% category">食品类</Label>
+				<Label class="w-31% l-3% category">化工类</Label>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

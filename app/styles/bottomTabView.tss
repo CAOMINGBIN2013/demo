@@ -1,0 +1,11 @@
+"#label": {
+  bottom: "5dp",
+  width: Ti.UI.FILL,
+  height: "16dp",
+  font: {
+    fontSize: "11dp"
+  },
+  color:'#979797',
+  textAlign: "center",
+  touchEnabled: false
+}

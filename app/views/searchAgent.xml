@@ -1,0 +1,102 @@
+<Alloy>
+	<Window title="产品质量报告书" id="mainWindow">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="检测机构" search="true" searchHint="搜索"></Require>
+			<Widget id="paging" src="de.manumaticx.pagingcontrol" onSelect="tabHandler"  />
+			<ScrollableView id="scrollableView">
+				<View id="viewAgentZone" class="lo-h" title="区域" >
+					<ScrollView id="cZone" class="t-0 l-0 lo-v w-25% h-size bg">
+						<View class="h-size lo-c bg-white">
+							<Label action=1 class="zone">深圳市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">北京市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">上海市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">广州市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">武汉市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">青岛市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">南京市</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">哈尔滨市</Label>
+						</View>
+					</ScrollView>
+					<TableView id="tbZoneAgent" class="t-0 l-5 w-70% h-size bg-white"></TableView>
+				</View>
+				<!--
+				<View id="viewAgentPrice" title="参考价格">
+									<View class="h-size">
+										<View class="t-10 w-size h-size lo-h">
+											<Label class="l-5">价格区间：（元）</Label>
+											<TextField class="w-100  bg"></TextField>
+											<Label> - </Label>
+											<TextField class="w-100  bg"></TextField>
+										</View>
+										<View class="t-10 w-size h-size lo-h ">
+											<Label class="w-90 h-30 l-10 bg"> 500 - 1000 </Label>
+											<Label class="w-90 h-30 l-10 bg"> 1000 - 5000 </Label>
+											<Label class="w-90 h-30 l-10 bg"> 5000 - 10000 </Label>
+										</View>
+										<View class="t-10 w-size h-size lo-h">
+											<Button class="btn w-40% b-10" borderWidth="2" borderColor="#bbb" backgroundColor="#fff" color="#000">重置</Button>
+											<Button class="l-10 btn w-40% b-10">确认</Button>
+										</View>
+									</View>
+									<TableView id="tbPriceAgent" class="t-5 h-size"></TableView>
+								</View>-->
+				
+				<View id="viewAgentCategory" class="lo-h" title="检测能力">
+					<ScrollView id="cCategory" class="t-0 l-0 lo-v w-25% h-size bg">
+						<View class="h-size lo-c bg-white">
+							<Label action=1 class="zone">建筑材料</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">其他</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">汽车</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">家具</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">电子电器</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">皮革箱包</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">鞋类</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">化妆品</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">玩具及儿童用品</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">保健食品</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">食品</Label>
+						</View>
+						<View class="h-size lo-c">
+							<Label action=1 class="zone">纺织品及服装</Label>
+						</View>
+					</ScrollView>
+					<TableView id="tbCategoryAgent" class="t-0 l-5 w-70% h-size bg-white"></TableView>
+				</View>
+			</ScrollableView>
+		</View>
+	</Window>
+</Alloy>

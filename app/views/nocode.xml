@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0 " backgroundColor="#F8F8FA">
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="查询结果"></Require>
+			<View class="lo-c">
+				<View class="b-140 t-0">
+					<ImageView class="w-120 t-40" image="/images/lei.png"></ImageView>
+					<View class="t-10 h-size w-85% lo-h">
+						<Label class="l-0" module="xp.ui" html="<font color='red'>亲，抱歉！</font>质量宝未收录该条码的产品信息，请确定您扫描查询的条码是否正确。"></Label>
+					</View>
+				</View>
+				<Button id="scan" class="btn b-80 w-120">继续扫描</Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

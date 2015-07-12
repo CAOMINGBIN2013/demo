@@ -1,0 +1,12 @@
+<Alloy>
+	<TableViewRow class="lo-c">
+		<ImageView id="image" class="h-80 w-80 l-10 t-10"></ImageView>
+		<View class="lo-v l-100 r-10 h-size t-10" >
+			<Label class="itemTitle" id="lblTitle"></Label>
+			<Label class="itemLine" id="lblLine1"></Label>
+			<Label class="itemLine" id="lblLine2"></Label>
+			<Label class="itemLine" id="lblLine3"></Label>
+		</View>
+		<View class="t-100 line l-10 r-10"></View>
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,9 @@
+<Alloy>
+    <Window class="bg-transparent bg-50" navBarHidden="true">
+    	<View id="wrapper">
+	        <View id="container" class="container t-10">
+	            <!-- Content to be put here programatically -->
+	        </View>
+        </View>
+    </Window>
+</Alloy>

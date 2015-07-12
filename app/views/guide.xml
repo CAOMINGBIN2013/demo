@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<ScrollableView id="tabContainer1" class="t-0 b-0"  showPagingControl="false" >
+			<ImageView class="h-fill w-fill" image="/images/guide/guide1.jpg"></ImageView>
+			<ImageView class="h-fill w-fill" image="/images/guide/guide2.jpg"></ImageView>
+			<ImageView class="h-fill w-fill" image="/images/guide/guide3.jpg"></ImageView>
+		</ScrollableView>
+	</Window>
+</Alloy>

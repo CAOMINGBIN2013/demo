@@ -1,0 +1,45 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="注册"></Require>
+			<Widget id="paging" src="de.manumaticx.pagingcontrol" />
+			<ScrollableView id="scrollableView">
+				<View title="用户" >
+					<View class="lo-v w-80% h-size">
+						<TextField id="name" hintText="用户名" class="w-100%"></TextField>
+						<TextField id="email" hintText="邮箱" class="w-100%"></TextField>
+						<TextField id="phone" hintText="手机" class="w-100%"></TextField>
+						<TextField id="password" hintText="密码" passwordMask="*" class="w-100%"></TextField>
+						<TextField id="confirmpassword" hintText="确认密码" passwordMask="*" class="w-100%"></TextField>
+						<Button class="btn w-100%">注册</Button>
+					</View>
+				</View>
+				<View title="生产商">
+					<View class="lo-v w-80% h-size">
+					<TextField id="name" hintText="用户名" class="w-100%"></TextField>
+					<View class="lo-h w-100% h-size">
+						<TextField  id="phone" hintText="手机" class="w-80% l-0"></TextField>
+						<Label id="sendRegisterCode" class="W-20%">发送验证码</Label>
+					</View>
+						<TextField  id="registerCode" hintText="请输入手机中的验证码" class="w-100%"></TextField>
+					<TextField id="password" hintText="密码" passwordMask="*" class="w-100%"></TextField>
+					<TextField id="confirmpassword" hintText="确认密码" passwordMask="*" class="w-100%"></TextField>
+					
+					<TextField id="companyName" hintText="生产商名称" class="w-100%"></TextField>
+						<TextField id="address" hintText="生产商地址" class="w-100%"></TextField>
+						<View class="lo-h w-100% h-size" id="selectCategories">
+						<TextField id="productCategories" editable="false" hintText="请选择产品类别" class="w-90% l-0"></TextField>
+						<ImageView image="/images/more_3.png" class="w-10%"></ImageView>
+						</View>
+					</View>
+					<Button class="btn w-80%">注册</Button>
+					<View class="t-5 h-size lo-h w-80%">
+						<ImageView image="/images/option_a.png" class="l-0"></ImageView>
+						<Label class="l-5">我已阅读并接受</Label>
+						<Label class="l-5">用户协议</Label>
+					</View>
+				</View>
+			</ScrollableView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<View class="t-0 b-0">
+		<Require type="widget" src="edu.uwm.navBar" text="更多"></Require>
+		<TableView id="resultTb" class="t-5">
+			<Widget src="ti.ux.rowitem" id="share" title="软件分享" hasChildren="true" />
+			<Widget src="ti.ux.rowitem" id="hezuo" title="商务合作" hasChildren="true" />
+			<Widget src="ti.ux.rowitem" id="about" title="关于我们" hasChildren="true" />
+			<Widget src="ti.ux.rowitem" id="mianze" title="免责声明" hasChildren="true" />
+		</TableView>
+	</View>
+</Alloy>

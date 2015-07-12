@@ -1,0 +1,73 @@
+
+".androidText[platform=android]":{
+	height:"34dp",
+    top:"10dp",
+    font:{
+    	fontSize:"14dp"
+    }
+}
+
+".bg":{
+	backgroundColor:"#E8E8E8"
+}
+
+".grayLable":{
+	color:'#888787'
+}
+
+".primaryLable":{
+	color:'#e87726'
+}
+
+".itemTitle":{
+	font:{
+		fontSize:"14dp"
+	},
+	color:"#3a3a3a",
+	left:5
+}
+".itemLine":{
+	font:{
+		fontSize:"11dp"
+	},
+	color:"#888787",
+	left:5,
+	top:3
+}
+".itemDate":{
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#b3b3b3",
+	left:5,
+	top:3
+}
+".line":{
+	width:Ti.UI.FILL,
+	height:1,
+	backgroundColor:"#b3b3b3"
+}
+
+
+".btn":{
+    color:'#ffffff',
+    backgroundColor: '#e87726',
+	borderRadius:'4dp'
+}
+
+".category":{
+	font:{
+		fontSize:"11dp"
+	},
+	color:"#888787",
+	borderColor:"#888787",
+	borderWidth:"1dp",
+	left:"15dp",
+	width:"80dp",
+	height:"40dp",
+	textAlign:"center"
+}
+"#image" : {
+   borderColor:"#b3b3b3",
+   borderWidth:1
+}

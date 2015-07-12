@@ -1,0 +1,12 @@
+<Alloy>
+	<View class="well">
+		<View class="well-content">
+			<Label class="h3">手输入商品编码</Label>
+			<TextField id="txtCode" class="input-tf" hintText="编码"></TextField>
+			<View class="col col-4 lo-h">
+				<Button id="skip" class="col-2 btn-warning">取消</Button>
+				<Button id="query" class="col-2 col-spacing btn-success">确定</Button>
+			</View>
+		</View>
+	</View>
+</Alloy>

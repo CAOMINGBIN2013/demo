@@ -1,0 +1,27 @@
+{
+  "global": {
+    "theme": "wriststrap"
+  },
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "dependencies": {
+    "ti.ux.iconfont": "1.0",
+    "ti.ux.iconlabel": "1.0",
+    "ti.ux.iconbutton": "1.0",
+    "ti.ux.rowitem": "1.0",
+    "ti.ux.alignview": "1.0",
+    "nl.fokkezb.loading": "1.8.3",
+    "nl.fokkezb.toast": "1.1.0",
+    "wriststrap.dialog": "1.0",
+    "me.wslong.tiTabs": "2.0",
+    "edu.uwm.navBar": "0.2",
+    "de.manumaticx.pagingcontrol": "0.4.2",
+    "au.jkotchoff.scrollableView": "1.0.0",
+    "com.alcoapps.socialshare": "1.0"
+  }
+}

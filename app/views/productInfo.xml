@@ -1,0 +1,40 @@
+<Alloy>
+	<Window title="产品质量报告书" id="mainWindow">
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="质检报告"></Require>
+		
+			<ScrollView class="t-0 b-0" backgroundColor="#F4F6F8">
+				<View class="lo-c h-size bg-white">
+					<ImageView image="/images/product_small.jpg" id="image" class="h-80 w-80 l-10 t-10"></ImageView>
+					<View class="lo-v l-100 r-10 h-size t-10" >
+						<Label class="itemTitle primaryLable" id="lblTitle"></Label>
+						<Label class="itemLine" id="lblLine1"></Label>
+						<Label class="itemLine" id="lblLine2"></Label>
+						<Label class="itemLine" id="lblLine3"></Label>
+						<View class="h-size w-size lo-h l-5">
+						<Label class="l-0 itemLine" id="lblLine4"></Label>
+						<Label class="l-5 itemLine" id="lblLine5"></Label>
+						</View>
+					</View>
+					<View class="t-120 line l-10 r-10"></View>
+					<TableView id="result" class="t-125 h-size">
+						<!--<Widget src="ti.ux.rowitem" icon="fa-file-text-o" title="检测能力表(业务范围)" hasChildren="true"/>-->
+					</TableView>
+				</View>
+				<View class="t-10 h-size bg-white" >
+					<TableView class='t-0 b-0' id="resultTb">
+						<Widget src="ti.ux.rowitem" iconColor="#888787" color="#888787" icon="fa-file-text-o" title="看检测报告" hasChildren="true"/>
+						<Widget src="ti.ux.rowitem" iconColor="#888787" color="#888787" icon="fa-book" title="看证书" hasChildren="true" ></Widget>
+						<Widget src="ti.ux.rowitem" iconColor="#888787" color="#888787" icon="fa-list-alt" title="看其它质量追溯信息" hasChildren="true" ></Widget>
+					</TableView>
+				</View>
+				<View class="t-10 h-size bg-white">
+					<Label class="l-10 t-5 h5 grayLable">浏览记录</Label>
+					<View class="t-10 n-container h-size lo-c">
+						<Require src="history3View" type="view"></Require>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

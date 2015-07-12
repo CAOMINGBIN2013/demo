@@ -1,0 +1,6 @@
+<Alloy>
+	 <Require type="widget" src="me.wslong.tiTabs" id="tabs" />
+	<ImageView image="/images/bottom/bottom_bg.png" height="99" width="110" zIndex="1" bottom="0" ></ImageView>
+	<ImageView image="/images/bottom/scan.png" height="70" width="70" zIndex="3" bottom="20" onClick="scan" ></ImageView>
+	 <Label id="label" text="扫质量"  zIndex="4" ></Label>
+</Alloy>

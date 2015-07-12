@@ -1,0 +1,7 @@
+"#mainWindow":{
+    layout: 'composite'
+}
+
+"Label":{
+    color:'#979797'
+}

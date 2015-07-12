@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="mainWindow" title="产品质量追溯系统" >
+		<View id="tabContainer" class="t-0 b-0"  >
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="商品"></Require>
+			<ScrollView class="t-0 b-0" backgroundColor="#F4F6F8">
+				<View class="lo-c h-size bg-white">
+					<ImageView image="/images/product_small.jpg" id="image" class="h-80 w-80 t-10 b-10 l-10"></ImageView>
+					<View class="l-95 lo-v t-10 b-10 r-10 h-size w-size">
+						<Label id="lblProductName" class="l-0 t-5 itemTitle primaryLable"></Label>
+						<Label id="lblProductDescription" class="l-0 t-10 p-content itemLine"></Label>
+					</View>
+				</View>
+				<View class="t-10 h-size bg-white" >
+					<Label class="l-10 t-5 h5 grayLable">相关批次</Label>
+					<TableView id="resultTb" class="t-5 h-280"></TableView>
+				</View>
+				<View class="t-10 h-size bg-white">
+					<Label class="l-10 t-5 h5 grayLable">浏览记录</Label>
+					<View class="t-10 n-container h-size lo-c">
+						<Require src="history3View" type="view"></Require>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

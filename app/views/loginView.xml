@@ -1,0 +1,18 @@
+<Alloy>
+	<View class="bg">
+		<View class="h-size ">
+			<View class="col w-80% h-size lo-v bg-white" borderRadius="5">
+				<TextField id="name" hintText="手机/邮箱/用户名" class="w-100%"></TextField>
+				<TextField id="password" hintText="密码" passwordMask="true" class="w-100%"></TextField>
+			</View>
+			
+			<View class="col w-80% h-size lo-v ">
+				<Button id="btnLogin" class="btn w-100%">登录</Button>
+				<View class="col w-100% h-size lo-c">
+					<Label id="findPassword" class="l-0 t-5">找回密码</Label>
+					<Label id="register" class="r-0 t-5">立即注册</Label>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,71 @@
+<Alloy>
+	<NavigationWindow module="xp.ui">
+		<Window id="mainWindow" title="产品质量追溯系统" >
+			<ScrollableView id="tabContainer1" class="t-0 b-60" scrollingEnabled="false" showPagingControl="false" >
+			<View id="cIndex" class="t-0 b-0">
+					<View class="t-0 lo-c h-size">
+						  <Widget src="au.jkotchoff.scrollableView" id="ad" height="180dp">
+							<ImageView class="h-180 w-fill" image="/images/ad/app-b1.jpg"></ImageView>
+							<ImageView class="h-180 w-fill" image="/images/ad/app-b2.jpg"></ImageView>
+							<ImageView class="h-180 w-fill" image="/images/ad/app-b3.jpg"></ImageView>
+						   </Widget>
+					</View>
+					<ImageView class="t-20 h-39" image="/images/logo.png" ></ImageView>
+					<View class="t-20 container h-size">
+						<View class="col col-4 input-container" borderColor="#e87726" borderRadius="0">
+							<TextField hintText="搜索产品质量/检测机构" id="codeTxt" class="input-tf input-rk-search" editable="false" onTouchstart="enableTextField" ></TextField>
+							<View class="input-addon h-40 w-40 lo-c" id="btnSearch" backgroundColor="#e87726">
+								<ImageView image="/images/search_ico.png" class="h-30 w-30"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="t-20 n-container">
+						<View class="n-col-3 lo-v" id="searchZhongJie">
+							<ImageView class="t-5 h-40 w-40" image="/images/index_ico1.png"></ImageView>
+							<Label class="t-5 grayLable">检测中介服务</Label>
+						</View>
+						<View class="n-col-3 lo-v" id="searchJiGou">
+							<ImageView class="t-5 h-40 w-40" image="/images/index_ico2.png"></ImageView>
+							<Label class="t-5 grayLable">检测机构</Label>
+						</View>
+						<View class="n-col-3 lo-v" id="searchStand">
+							<ImageView class="t-5 h-40 w-40" image="/images/index_ico3.png"></ImageView>
+							<Label class="t-5 grayLable">标准查询</Label>
+						</View>
+						<View class="n-col-3 lo-v" id="searchBaoGuang">
+							<ImageView class="t-5 h-40 w-40" image="/images/index_ico4.png"></ImageView>
+							<Label class="t-5 grayLable">曝光栏</Label>
+						</View>
+					</View>
+					<View class="t-30 n-container">
+						<View class="n-col-6 lo-v">
+							<View id="cZixun" class="h-size w-size lo-h" borderColor="#bbb" borderWidth="1dp" borderRadius="4">
+								<ImageView image="/images/zixun.png"
+									class="l-5 t-5 h-40 w-40"></ImageView>
+									<View class="h-size w-size l-25">
+										<Label class="t-5 grayLable r-5">检测资讯</Label>
+										<Label class="t-2 itemLine r-5">及时 有效</Label>
+									</View>
+							</View>
+						</View>
+						<View class="n-col-6 lo-v">
+							<View id="cZhishi" class="h-size w-size lo-h" borderColor="#bbb" borderWidth="1dp" borderRadius="4">
+								<ImageView image="/images/zhichi.png"
+									class="l-5 t-5 h-40 w-40"></ImageView>
+									<View class="h-size w-size l-25">
+										<Label class="t-5 grayLable r-5">检测知识</Label>
+										<Label class="t-2 itemLine r-5">专业 易懂</Label>
+									</View>
+							</View>
+						</View>
+					</View>
+				</View>
+			<Require src="history" type="view"></Require>
+			<View class="t-0 b-0"></View>
+			<Require src="my" type="view"></Require>
+			<Require src="more" type="view"></Require>
+			</ScrollableView>
+			<Require src="bottomTabView" index=0></Require>
+		</Window>
+	</NavigationWindow>
+</Alloy>

@@ -1,0 +1,8 @@
+<Alloy>
+  <View id="container" class="lo-c">
+    <ScrollableView id="scrollableView"/>
+    <View id="pagingControl">
+      <View id="pagingControlButtons"/>
+    </View>
+  </View>
+</Alloy>

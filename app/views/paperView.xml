@@ -1,0 +1,9 @@
+<Alloy>
+	<Window>
+		<View id="menu">
+			<Button id="btn_prev">上一页</Button>
+			<Button id="btn_next">下一页</Button>
+		</View>
+		<WebView id="webview"/>
+	</Window>
+</Alloy>
