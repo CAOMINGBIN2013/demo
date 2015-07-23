@@ -42,6 +42,14 @@ function display(pdf) {
 				pdfReader.loadPDFFromFile(pdf);
 				$.tabContainer.add(pdfReader);
 		
+	}else if(fileurl.toLowerCase().indexOf(".xls")>0){
+		var anImageView = Ti.UI.createWebView({
+			url : pdf.nativePath,
+			width:Ti.UI.FILL,
+			height:Ti.UI.FILL
+		});
+		// Add to the parent view.
+		$.tabContainer.add(anImageView);
 	} else {
 		//alert(pdf.name);
 		// Create an ImageView.

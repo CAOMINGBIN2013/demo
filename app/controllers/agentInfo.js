@@ -49,7 +49,8 @@ $.resultTb.addEventListener("click", function(e) {
 				success : function(data) {
 					if (_.isArray(data) && data.length > 0) {
 						Alloy.Globals.NavGroup.openWindow(Alloy.createController("paperList", {
-							files : data
+							files : data,
+							title:"能力表"
 						}).getView());
 					} else {
 						alert('没有相关记录。');
@@ -57,16 +58,26 @@ $.resultTb.addEventListener("click", function(e) {
 				}
 			});
 		} else {
-			var afile = _.filter(agent.fileList_, function(f) {
-				return f.type != 'MY';
+			http.post(SearchZizhiById, {
+				"qsupplier.id" : agent.id
+			}, function(data) {
+				var afiles=[];
+				_.each(data,function(c){
+					var cate=c.aptitudename;
+					_.each(c.qfileList_,function(f){
+						f.filename=cate+"  "+f.filename;
+					});
+					afiles.concat(c.qfileList_);
+				});
+				if (afile && afile.length > 0) {
+					Alloy.Globals.NavGroup.openWindow(Alloy.createController("paperList", {
+						files : afile,
+						title:"资质证书"
+					}));
+				} else {
+					alert('没有相关记录。');
+				}
 			});
-			if (afile && afile.length > 0) {
-				Alloy.Globals.NavGroup.openWindow(Alloy.createController("paperList", {
-					files : afile
-				}));
-			} else {
-				alert('没有相关记录。');
-			}
 		}
 	}
 });

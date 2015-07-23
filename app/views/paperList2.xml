@@ -1,7 +1,7 @@
 <Alloy>
 	<Window title="产品质量报告">
 		<View id="tabContainer" class="t-0 b-0"  >
-			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="查看质检报告"></Require>
+			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="查看"></Require>
 		</View>
 	</Window>
 </Alloy>

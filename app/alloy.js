@@ -26,6 +26,7 @@ var SearchAgentByCity = WEBAPI_BASE + "/myRepport_getQsupplierInformationByCondi
 var SearchAgentByName = WEBAPI_BASE + "/myRepport_getQsupplierInformationByConditionNameLike.m";
 var SearchAgentByNengLi = WEBAPI_BASE + "/myRepport_getQsupplierInformationByNengLI.m";
 var SearchAgentNengli=WEBAPI_BASE+"/myRepport_getQsupplierJianCheNengLi.m";
+var SearchZizhiById=WEBAPI_BASE+"/myRepport_getMyAptitudesList.m";
 
 Alloy.Globals.Loading = Alloy.createWidget("nl.fokkezb.loading");
 //Alloy.Globals.Loading.progress=false;

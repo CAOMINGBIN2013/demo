@@ -8,6 +8,9 @@ $.navBar.showBack(function() {
 	Alloy.Globals.NavGroup.closeWindow($.paperList);
 });
 
+if(args.title)
+$.navBar.setTitle(args.title);
+
 function search() {
 	Alloy.Globals.Loading.show();
 	var rows = [];

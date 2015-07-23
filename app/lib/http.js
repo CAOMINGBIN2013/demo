@@ -117,3 +117,21 @@ exports.request = function(_params) {
 	}
 };
 
+exports.post=function(url,data,success,error){
+	Alloy.Globals.Loading.show();
+	exports.request({
+			url : url,
+			format : "JSON",
+			type : "POST",
+			data : data,
+			success : function(data) {
+				Alloy.Globals.Loading.hide();
+				success&&success(data);
+			},
+			failure : function(error) {
+				alert("网络错误，请重试。");
+				Alloy.Globals.Loading.hide();
+				error&&error();
+			}
+		});
+};
