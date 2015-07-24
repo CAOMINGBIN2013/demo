@@ -69,9 +69,9 @@ $.resultTb.addEventListener("click", function(e) {
 					});
 					afiles.concat(c.qfileList_);
 				});
-				if (afile && afile.length > 0) {
+				if (afiles && afiles.length > 0) {
 					Alloy.Globals.NavGroup.openWindow(Alloy.createController("paperList", {
-						files : afile,
+						files : afiles,
 						title:"资质证书"
 					}));
 				} else {
