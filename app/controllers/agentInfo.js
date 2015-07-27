@@ -22,7 +22,7 @@ function init() {
 			success : function(data) {
 				var image = Alloy.Globals.formatFileUrl(data.fileList_, 'MY');
 				user.addHistory({
-					id : 1,
+					id : agent.id,
 					image : image || "/images/gs_logo.png",
 					title : agent.name,
 					line1 : agent.commetnts
@@ -61,19 +61,23 @@ $.resultTb.addEventListener("click", function(e) {
 			http.post(SearchZizhiById, {
 				"qsupplier.id" : agent.id
 			}, function(data) {
+				Ti.API.info(data);
 				var afiles=[];
 				_.each(data,function(c){
 					var cate=c.aptitudename;
 					_.each(c.qfileList_,function(f){
 						f.filename=cate+"  "+f.filename;
+						afiles.push(f);
 					});
-					afiles.concat(c.qfileList_);
+					
 				});
+				Ti.API.info(afiles);
+				Ti.API.info(agent.id);
 				if (afiles && afiles.length > 0) {
 					Alloy.Globals.NavGroup.openWindow(Alloy.createController("paperList", {
 						files : afiles,
 						title:"资质证书"
-					}));
+					}).getView());
 				} else {
 					alert('没有相关记录。');
 				}

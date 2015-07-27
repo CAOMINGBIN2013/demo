@@ -67,7 +67,7 @@ $.tbProduct.addEventListener("click", function(e) {
 $.tbAgent.addEventListener("click", function(e) {
 	if (e.row) {
 		var win = Alloy.createController("agentInfo", {
-			product : e.row.data
+			agent : e.row.data
 		}).getView();
 		Alloy.Globals.NavGroup.openWindow(win);
 	}
