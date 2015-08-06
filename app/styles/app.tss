@@ -1,4 +1,4 @@
-"Window":{
+"Window[platform=ios]":{
 	navBarHidden:true,
 	statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 }

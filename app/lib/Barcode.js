@@ -279,15 +279,21 @@ exports.IOSScanBarcode = function(callback) {
 	}).getView();
 	var imageIcon = Alloy.createWidget("ti.ux.iconlabel", {
 		width : Ti.UI.SIZE,
-		left : 60,
+		left : 30,
 		text : "图片",
 		icon : "fa-image"
 	}).getView();
 	var flashIcon = Alloy.createWidget("ti.ux.iconlabel", {
 		width : Ti.UI.SIZE,
-		left : 50,
+		left : 30,
 		text : "闪光灯",
 		icon : "fa-flash"
+	}).getView();
+	var cancelIcon = Alloy.createWidget("ti.ux.iconlabel", {
+		width : Ti.UI.SIZE,
+		left : 30,
+		text : "取消",
+		icon : "fa-times-circle-o"
 	}).getView();
 
 	handIcon.addEventListener('click', openHand);
@@ -308,9 +314,14 @@ exports.IOSScanBarcode = function(callback) {
 		cameraView.toggleFlash();
 	});
 
+	cancelIcon.addEventListener('click',function(){
+		win.close();
+	});
+
 	bottomContainer.add(handIcon);
 	bottomContainer.add(imageIcon);
 	bottomContainer.add(flashIcon);
+	bottomContainer.add(cancelIcon);
 	bottom.add(bottomContainer);
 	overlay.add(bottom);
 

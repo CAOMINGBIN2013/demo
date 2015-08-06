@@ -1,4 +1,9 @@
 $.index.open();
+
+if(OS_IOS){
+	$.mainWindow.statusBarStyle="Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT";
+}
+
 if(!Ti.App.Properties.getBool("guide",false)){
 	var guide=Alloy.createController("guide").getView();
 	guide.open();

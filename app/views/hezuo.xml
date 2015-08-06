@@ -2,12 +2,12 @@
 	<Window id="mainWindow" title="产品质量追溯系统" >
 		<View id="tabContainer" class="t-0 b-0"  >
 			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="商务合作"></Require>
-			<View>
+			<ScrollView contentHeight="Ti.UI.SIZE">
 				<ImageView class="t-10 w-50%" image="/images/hezuo/a1.jpg"></ImageView>
-				<ImageView class="t-10 w-50%" image="/images/hezuo/a2.png"></ImageView>
-				<ImageView class="t-10 w-50%" image="/images/hezuo/a3.png"></ImageView>
+				<ImageView class="t-10 w-50%" image="/images/hezuo/a2.jpg"></ImageView>
+				<ImageView class="t-10 w-50%" image="/images/hezuo/a3.jpg"></ImageView>
 				<ImageView class="t-10 w-50%" image="/images/hezuo/a4.jpg"></ImageView>
-			</View>
+			</ScrollView>
 		</View>
 	</Window>
 </Alloy>

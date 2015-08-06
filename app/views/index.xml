@@ -1,6 +1,6 @@
 <Alloy>
 	<NavigationWindow module="xp.ui">
-		<Window id="mainWindow" title="产品质量追溯系统" navBarHidden="true" statusBarStyle="Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT" >
+		<Window id="mainWindow" title="产品质量追溯系统" navBarHidden="true"  >
 			<ScrollableView id="tabContainer1" class="t-0 b-60" scrollingEnabled="false" showPagingControl="false" >
 			<ScrollView id="cIndex" class="t-0 b-0">
 					<View class="t-0 lo-c h-size">
