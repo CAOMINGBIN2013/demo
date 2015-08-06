@@ -1,0 +1,19 @@
+<Alloy>
+	<Window backgroundColor = 'transparent' class="lo-c">
+		<View class="h-80 t-0" backgroundColor="#bbb" opacity="0.5">
+			<View class="h-size w-size lo-h">
+				<Widget src="ti.ux.iconlabel" text="条形码" icon="fa-barcode" width="Ti.UI.SIZE"></Widget>
+				<Widget src="ti.ux.iconlabel" text="二维码" icon="fa-qrcode" width="Ti.UI.SIZE" left="40dp"></Widget>
+			</View>
+		</View>
+		<View class="h-80 b-0"  backgroundColor="#bbb" opacity="0.5">
+			<View class="h-size w-size lo-h">
+				<Widget id="handIcon" src="ti.ux.iconlabel" text="手输" icon="fa-edit" width="Ti.UI.SIZE"></Widget>
+				<Widget id="imageIcon" src="ti.ux.iconlabel" text="图片" icon="fa-image" width="Ti.UI.SIZE" left="30dp"></Widget>
+				<Widget id="flashIcon" src="ti.ux.iconlabel" text="闪光灯" icon="fa-flash" width="Ti.UI.SIZE"left="30dp" ></Widget>
+				<Widget id="cancelIcon" src="ti.ux.iconlabel" text="取消" icon="fa-times-circle-o" width="Ti.UI.SIZE" left="40dp"></Widget>
+			
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,130 @@
+<h1>Appcelerator Titanium :: Barcode View</h1>
+<p>An Appcelerator Titanium module that creates a view that allows you to scan UPC's using the ZBar Barcode Reader (http://zbar.sourceforge.net/).</p>
+<p>I had been playing around with the Acktie Barcode reader and really wanted something that would let me place the view inside of my own page (and not use a modal window). This module allows you to create the barcode view just as you would create a standard Titanium.UI.view and listen for a 'success' callback.</p>
+<p>This module will continue to grow and new options will be added in the near future.</p>
+<h2>Setup</h2>
+
+<p>Include the module in your tiapp.xml:</p>
+<pre><code>
+com.mfogg.barcode
+
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Currently the options you have are limited to what type of barcodes you would like to 'listen' for and the miniumum scan quality, but that makes the module pretty simple :)</p>
+<p>The types of barcodes available are:</p>
+<ul>
+<li>EAN2</li>
+<li>EAN5</li>
+<li>EAN8</li>
+<li>UPCE</li>
+<li>ISBN10</li>
+<li>UPCA</li>
+<li>EAN13</li>
+<li>ISBN13</li>
+<li>COMPOSITE</li>
+<li>I25</li>
+<li>DATABAR</li>
+<li>DATABAR_EXP</li>
+<li>CODE39</li>
+<li>PDF417</li>
+<li>CODE93</li>
+<li>CODE128</li>
+</ul>
+<p>And they can be used like...</p>
+<pre><code>
+var Barcode = require('com.mfogg.barcode'); // Initialize the Barcode module
+
+// open a single window
+var win = Ti.UI.createWindow({backgroundColor:"#eee"});
+
+var allowed_upcs = [ // See list of available barcode types above
+  "UPCE",
+  "ISBN10",
+  "UPCA",
+  "EAN13",
+  "CODE93",
+  "CODE128"
+];
+
+var barcodeView = Barcode.createView({
+  top: 0,
+  height: 320,
+  width: 320,
+  barcodes: allowed_upcs, // Required
+  minQuality: 10, // Optional (defaults to 0),
+  flashEnabled: false, // Optional (defaults to false)
+  scanCrop: { // Optional
+    x: 10,
+    y: 10,
+    height: 100,
+    width: 100
+  }, 
+  scanCropPreview: true // Optional (defaults to false)
+});
+
+win.add(barcodeView);
+win.open();
+
+</code></pre>
+* Note here that the created view (ex. 'barcodeView' above) can have other views added on top of it to act as a camera overlay (exactly how you would a standard Ti.UI.view)
+
+<h2>Functions</h2>
+
+<h3>barcodeView.enableFlash();</h3>
+
+<p>Turns the flash on (and fires the "flashChange" event)</p>
+<h3>barcodeView.disableFlash();</h3>
+
+<p>Turns the flash off (and fires the "flashChange" event)</p>
+<h3>barcodeView.toggleFlash();</h3>
+
+<p>Toggles the flash on or off (and fires the "flashChange" event)</p>
+<h2>Listeners</h2>
+
+<h3>"success"</h3>
+
+<p>Will fire <strong>every</strong> time a barcode that fits the types above comes into the view.</p>
+<pre><code>
+barcodeView.addEventListener("success", function(event){
+  // event.data == number returned from the scan
+  // event.type == type of scan
+  // event.quality == quality of scan (http://zbar.sourceforge.net/iphone/sdkdoc/ZBarSymbol.html#quality__i)
+
+Ti.API.info("[NEW SCAN] Data: "+event.data);
+  Ti.API.info("[NEW SCAN] Type: "+event.type);
+  Ti.API.info("[NEW SCAN] Quality: "+event.quality);
+});
+
+</code></pre>
+
+<h3>"flashChange"</h3>
+
+<p>Will fire when the flash is toggled on or off</p>
+<pre><code>
+barcodeView.addEventListener("flashChange", function(event){
+  // event.flashEnabled = new value of the flashEnabled
+
+Ti.API.info("Flash Enabled: "+event.flashEnabled);
+});
+
+</code></pre>
+
+<h2>Known Issues and Future Improvements</h2>
+
+<ol>
+<li>Android support</li>
+</ol>
+<p>... anything else :)</p>
+<h2>Please let me know if you'd like any additions or something isn't working!</h2>
+
+<h3>License</h3>
+
+<p>Do whatever you want, however you want, whenever you want. And if you find a problem on your way, let me know so I can fix it for my own apps too :)</p>
+<h3>Attributions</h3>
+
+<ul>
+<li>https://github.com/acktie/Acktie-Mobile-iOS-Barcode-Reader - Got a lot of inspiration from what these guys did.</li>
+<li>http://zbar.sourceforge.net/ - ZBar Barcode Reader</li>
+</ul>
