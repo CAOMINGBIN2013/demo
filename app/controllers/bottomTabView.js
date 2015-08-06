@@ -52,8 +52,8 @@ var init = function(tabGroup, index) {
 		//if(_index>2)_index--;
 		$.parent.children[0].scrollToView(_index);
 		//if(_index==1){
-			//alert($.parent.children[0].currentPage);
-			$.parent.children[0].views[_index].fireEvent("reload");
+		//alert($.parent.children[0].currentPage);
+		$.parent.children[0].views[_index].fireEvent("reload");
 		//}
 	}
 
@@ -63,9 +63,21 @@ init($.tabs, index);
 
 function scan() {
 	var Barcode = require('Barcode');
-	Barcode.ScanBarcode(function(result) {
-		//alert(result);
-		var productWin=Alloy.createController("productInfo",{barcode:result}).getView();
-		Alloy.Globals.NavGroup.openWindow(productWin);
-	});
+	if (OS_ANDROID) {
+		Barcode.ScanBarcode(function(result) {
+			//alert(result);
+			var productWin = Alloy.createController("productInfo", {
+				barcode : result
+			}).getView();
+			Alloy.Globals.NavGroup.openWindow(productWin);
+		});
+	} else if (OS_IOS) {
+		Barcode.IOSScanBarcode(function(result) {
+			//alert(result);
+			var productWin = Alloy.createController("productInfo", {
+				barcode : result
+			}).getView();
+			Alloy.Globals.NavGroup.openWindow(productWin);
+		});
+	}
 }

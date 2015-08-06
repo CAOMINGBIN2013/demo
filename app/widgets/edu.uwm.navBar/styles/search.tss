@@ -1,7 +1,7 @@
 "#searchBox": {
   layout: "horizontal",
   width: Ti.UI.SIZE,
-  height:40,
+  height:30,
   borderColor:'#e87726',
   borderWidth:'1dp',
   borderRadius:22,
@@ -9,7 +9,7 @@
 },
 "#q": {
 	color: "#FFFFFF",
-	height:40,
+	height:30,
 	left:5,
 	backgroundColor: "transparent",
 	font:{
@@ -18,7 +18,7 @@
 },
 "#searchButton": {
 	left:10,
-	height: "36dp",
+	height: "26dp",
 	backgroundColor: "transparent",
 	image:'/images/top_search.png'
 }

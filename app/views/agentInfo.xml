@@ -17,7 +17,7 @@
 					</View>
 				</View>
 				<View class="t-10 h-size bg-white" >
-					<TableView id="resultTb" class="t-5 h-280">
+					<TableView id="resultTb" class="t-5 h-280 table-sep-style-none">
 						<Widget src="ti.ux.rowitem" icon="fa-file-text-o" title="检测能力表(业务范围)" hasChildren="true"/>
 						<Widget src="ti.ux.rowitem" icon="fa-book" title="资质证书" hasChildren="true" >
 						</Widget>

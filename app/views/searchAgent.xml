@@ -2,10 +2,10 @@
 	<Window title="产品质量报告书" id="mainWindow">
 		<View id="tabContainer" class="t-0 b-0"  >
 			<Require id="navBar" type="widget" src="edu.uwm.navBar" text="检测机构" search="true" searchHint="搜索"></Require>
-			<Widget id="paging" src="de.manumaticx.pagingcontrol" onSelect="tabHandler"  />
+			<Widget id="paging" src="de.manumaticx.pagingcontrol" findScrollableView="false" onSelect="tabHandler"  />
 			<ScrollableView id="scrollableView">
 				<View id="viewAgentZone" class="lo-h" title="区域" >
-					<ScrollView id="cZone" class="t-0 l-0 lo-v w-25% h-size bg">
+					<ScrollView id="cZone" class="t-0 l-0 lo-v w-25% b-0 bg" contentHeight="Ti.UI.SIZE">
 						<View class="h-size lo-c bg-white">
 							<Label action=1 class="zone">深圳市</Label>
 						</View>
@@ -56,7 +56,7 @@
 								</View>-->
 				
 				<View id="viewAgentCategory" class="lo-h" title="检测能力">
-					<ScrollView id="cCategory" class="t-0 l-0 lo-v w-25% h-size bg">
+					<ScrollView id="cCategory" class="t-0 l-0 lo-v w-25% b-0 bg" contentHeight="Ti.UI.SIZE">
 						<View class="h-size lo-c bg-white">
 							<Label action=1 class="zone">建筑材料</Label>
 						</View>

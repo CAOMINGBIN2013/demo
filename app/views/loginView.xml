@@ -3,6 +3,7 @@
 		<View class="h-size ">
 			<View class="col w-80% h-size lo-v bg-white" borderRadius="5">
 				<TextField id="name" hintText="手机/邮箱/用户名" class="w-100%"></TextField>
+					<View class="line" />
 				<TextField id="password" hintText="密码" passwordMask="true" class="w-100%"></TextField>
 			</View>
 			

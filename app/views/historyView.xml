@@ -1,5 +1,5 @@
 <Alloy>
-	<Widget id="paging" src="de.manumaticx.pagingcontrol" />
+	<Widget id="paging" src="de.manumaticx.pagingcontrol" findScrollableView="false" />
 	<ScrollableView id="scrollableView">
 		<TableView id="tbProduct" title="产品"/>
 		<TableView id="tbAgent" title="机构" />

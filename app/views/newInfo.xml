@@ -10,7 +10,7 @@
 						<Label id="lblDate" class="itemDate r-10"></Label>
 					</View>
 					<View class="line"></View>
-					<Label id="lblContent" module="xp.ui" class="itemLine l-10 r-10"></Label>
+					<Label id="lblContent" module="xp.ui" html="<b>content</b>" class="itemLine l-10 r-10"></Label>
 				</View>
 				
 			</ScrollView>
